@@ -11,30 +11,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PlaceBox = (props) => {
   const { title, purpose, location } = props.data;
+  console.log(purpose);
   return (
     <PlaceBoxContainer>
       <PlaceBoxImage />
-      {{ purpose } === "휴게" ? (
+      { purpose === 1 ? (
         <>
           <PlacePurpose>
             <FontAwesomeIcon icon={faBed} />
-            {purpose}
+            휴게
           </PlacePurpose>
         </>
       ) : (
         <></>
       )}
-      {{ purpose } === "공부" ? (
+      { purpose  === 2 ? (
         <>
           <PlacePurpose>
             <FontAwesomeIcon icon={faBookOpen} />
-            {purpose}
+            공부
           </PlacePurpose>
         </>
       ) : (
         <></>
       )}
-      {{ purpose } === "팀플" ? (
+      {{ purpose } === "3" ? (
         <>
           <PlacePurpose>
             <FontAwesomeIcon icon={faUsers} />
@@ -55,7 +56,7 @@ const PlaceBox = (props) => {
         <></>
       )}
       <PlaceTitle>{title}</PlaceTitle>
-      <PlaceLoctaion>{location}</PlaceLoctaion>
+      <PlaceLoctaion>정하산관</PlaceLoctaion>
     </PlaceBoxContainer>
   );
 };

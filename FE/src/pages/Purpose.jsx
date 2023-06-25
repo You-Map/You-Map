@@ -25,7 +25,7 @@ const Purpose = () => {
   const purposeID = params.purposeID;
   const getAPI = async () => {
     try {
-      const url = `${APIURL}/post/list-certified-loc/?location=${purposeID}`;
+      const url = `${APIURL}/post/list-certified-pur/?purpose=${purposeID}`;
       const res = await axios.get(url);
       setDataList(res.data);
       setLoading(true);

@@ -1,14 +1,20 @@
 import styled from "styled-components";
 import { palette } from "../../style/palette";
 
+import { useNavigate } from "react-router-dom";
+
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PlaceHeader = () => {
+  const nav = useNavigate();
+  const goBack = () => {
+    nav('../../main');
+  }
   return (
     <HeaderContainer>
-      <HeaderLogo>
+      <HeaderLogo onClick={goBack}>
         <FontAwesomeIcon icon={faLocationDot} />
         YouMap
       </HeaderLogo>
@@ -40,6 +46,8 @@ const HeaderLogo = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  cursor: pointer;
 `;
 
 const HeaderButton = styled.button`
