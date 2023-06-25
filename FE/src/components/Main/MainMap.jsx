@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import MapSrc from "../../assets/sogang_map.png";
+import { useNavigate } from "react-router-dom";
 
 import {
   faBed,
@@ -12,8 +13,18 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MainMap = () => {
+  const nav = useNavigate();
+  const goJ = () => {
+    nav("../place/1");
+  };
+
+  const goB = () => {
+    nav("../place/3");
+  };
+
   return (
     <MapContainer>
+      <MapButton onClick={goJ} />
       <ButtonContainer>
         <ContentButton>
           <FontAwesomeIcon icon={faBed} />
@@ -72,6 +83,20 @@ const ContentButton = styled.button`
   font-size: 24px;
   font-family: Gmarket Sans TTF;
   font-weight: 500;
+`;
+
+const MapButton = styled.button`
+  display: block;
+  width: 80px;
+  height: 80px;
+
+  background-color: red;
+  position: relative;
+  left: 1150px;
+  top: 540px;
+
+  opacity: 0;
+  cursor: pointer;
 `;
 
 export default MainMap;
