@@ -7,7 +7,10 @@ const GlobalStyle = createGlobalStyle`
         max-width : 1920px;
         min-width : 1080px;
         margin : 0 auto;
-     }
+     };
+    html {
+        font-size: 12px;
+    }
 `;
 
 export default GlobalStyle;
