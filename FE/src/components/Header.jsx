@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import { palette } from "../style/palette";
 
+import Modal from "./Modal/Modal";
+import useModal from "./Modal/useModal";
+
 const Header = () => {
   return (
     <HeaderContainer>
       <HeaderLogo>YouMap</HeaderLogo>
       <HeaderButton>Get Started</HeaderButton>
+
+      <Modal></Modal>
     </HeaderContainer>
   );
 };
