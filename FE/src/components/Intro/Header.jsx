@@ -34,9 +34,11 @@ const HeaderContainer = styled.header`
 
 const HeaderLogo = styled.div`
   color: ${palette.brand_lv4};
+
   font-size: 24px;
   font-family: Gmarket Sans TTF;
   font-weight: 700;
+
 
   margin-left: 2rem;
 `;
@@ -45,6 +47,7 @@ const HeaderButton = styled.button`
   background-color: ${palette.brand_lv4};
   color: white;
   font-family: Gmarket Sans TTF;
+
   letter-spacing: 2px;
 
   margin-right: 2rem;

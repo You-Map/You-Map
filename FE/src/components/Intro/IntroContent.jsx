@@ -10,7 +10,6 @@ const IntroContent = () => {
       <IntroContentDescription>
         학교에서 혼자 공부할 때, 팀플할 때, 휴식하고 싶을 때 <br />
         알맞은 장소를 유맵에서 찾아보세요.
-        <br />
       </IntroContentDescription>
     </IntroContentContainer>
   );
@@ -21,6 +20,7 @@ const IntroContentContainer = styled.div`
 `;
 
 const IntroContentTitle = styled.div`
+
   margin: 20rem auto 0;
   margin-left: 10rem;
   font-family: Gmarket Sans TTF;

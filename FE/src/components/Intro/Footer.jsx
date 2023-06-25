@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Footer = () => {
+
   return (
     <FooterContainer>
       멋쟁이사자처럼 2조 | 김성현, 김유이, 송경호, 신명준, 이선명
@@ -10,6 +11,7 @@ const Footer = () => {
 
 const FooterContainer = styled.footer`
   width: 100%;
+
   margin-top: 20rem;
   display: flex;
   flex-direction: column;
