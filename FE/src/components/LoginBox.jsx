@@ -11,9 +11,8 @@ const LoginBox = () => {
 
   return (
     <LoginBoxContainer>
-      YouMap Login
-      <Input />
-      <Input />
+      <Input placeholder=" ID" />
+      <Input placeholder=" Password" />
       <LoginButton onClick={goMain}>로그인</LoginButton>
     </LoginBoxContainer>
   );
@@ -25,6 +24,7 @@ const LoginBoxContainer = styled.div`
   text-align: center;
   background-color: white;
   border-radius: 10px;
+  font-family: Gmarket Sans TTF;
 `;
 
 const Input = styled.input`
@@ -34,6 +34,7 @@ const Input = styled.input`
   padding: 5px;
   border: 2px solid ${palette.brand_lv4};
   border-radius: 10px;
+  font-family: Gmarket Sans TTF;
 `;
 
 const LoginButton = styled.button`
@@ -42,6 +43,9 @@ const LoginButton = styled.button`
   width: 65%;
   padding: 5px;
   border-radius: 10px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  border-style: none;
+  font-family: Gmarket Sans TTF;
 `;
 
 export default LoginBox;
