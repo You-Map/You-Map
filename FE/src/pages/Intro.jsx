@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import IntroContent from "../components/IntroContent";
+import Header from "../components/Intro/Header";
+import Footer from "../components/Intro/Footer";
+import IntroContent from "../components/Intro/IntroContent";
 
 const Intro = () => {
   return (
