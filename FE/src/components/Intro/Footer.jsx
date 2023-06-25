@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { palette } from "../../style/palette";
 
 const Footer = () => {
   return (
@@ -20,7 +21,7 @@ const FooterContainer = styled.footer`
 `;
 
 const Text = styled.div`
-  color: #aaa;
+  color: ${palette.brand_lv4};
   font-size: 1.2rem;
   position: relative;
   right: 50px;
