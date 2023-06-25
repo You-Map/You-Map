@@ -2,15 +2,21 @@ import styled from "styled-components";
 import { palette } from "../style/palette";
 
 import Modal from "./Modal/Modal";
+import LoginBox from "./LoginBox";
+
 import useModal from "./Modal/useModal";
 
 const Header = () => {
+  const [isOpen, toggleModal] = useModal();
+
   return (
     <HeaderContainer>
       <HeaderLogo>YouMap</HeaderLogo>
-      <HeaderButton>Get Started</HeaderButton>
+      <HeaderButton onClick={toggleModal}>Get Started</HeaderButton>
 
-      <Modal></Modal>
+      <Modal state={isOpen} toggleModal={toggleModal}>
+        <LoginBox />
+      </Modal>
     </HeaderContainer>
   );
 };

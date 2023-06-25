@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const LoginBox = () => {
-  return;
+  return <LoginBoxContainer>Login</LoginBoxContainer>;
 };
 
 const LoginBoxContainer = styled.div`
