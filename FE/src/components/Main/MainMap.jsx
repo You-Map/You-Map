@@ -22,6 +22,10 @@ const MainMap = () => {
     nav("../place/3");
   };
 
+  const goPur = () => {
+    nav("../purpose/3");
+  };
+
   return (
     <MapContainer>
       <MapButton onClick={goJ} />
@@ -34,7 +38,7 @@ const MainMap = () => {
           <FontAwesomeIcon icon={faBookOpen} />
           공부
         </ContentButton>
-        <ContentButton>
+        <ContentButton onClick={goPur}>
           <FontAwesomeIcon icon={faUsers} />
           팀플
         </ContentButton>
