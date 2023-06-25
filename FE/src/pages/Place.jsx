@@ -18,13 +18,17 @@ const dummy = {
 };
 
 const Place = () => {
+  const [dataList, setDataList] = React.useState([]);
+  const [loading, setLoading] = React.useState(false);
+
   const params = useParams();
-  const placeID = params.ID;
+  const placeID = params.placeID;
   const getAPI = async () => {
     try {
       const url = `${APIURL}/post/list-certified-loc/?location=${placeID}`;
       const res = await axios.get(url);
-      console.log(res.data);
+      setDataList(res.data);
+      setLoading(true);
     } catch (err) {
       console.log("getPost error: ", err);
     }
@@ -40,9 +44,12 @@ const Place = () => {
       <PlaceTitle>${PlaceList[placeID]}</PlaceTitle>
       <PlaceSubtitlte>인기 많은 장소</PlaceSubtitlte>
       <GoodPlaceContainer>
-        <PlaceBox data={dummy} />
-        <PlaceBox data={dummy} />
-        <PlaceBox data={dummy} />
+        {
+          loading ? 
+          dataList.map((placebox)=>(
+            <PlaceBox data={placebox} />
+          )) : <></>
+        }
       </GoodPlaceContainer>
     </div>
   );
