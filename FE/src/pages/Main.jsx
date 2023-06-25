@@ -5,15 +5,16 @@ import MainSidebar from "../components/Main/MainSidebar";
 const Main = () => {
   return (
     <MainContainer>
-      Hello
       <MainMap />
-      <MainSidebar />
+      {/* <MainSidebar /> */}
     </MainContainer>
   );
 };
 
 const MainContainer = styled.div`
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export default Main;
