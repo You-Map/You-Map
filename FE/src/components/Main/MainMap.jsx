@@ -59,7 +59,7 @@ const ContentButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   margin: 2rem auto 0;
   width: 194px;
   height: 69px;
