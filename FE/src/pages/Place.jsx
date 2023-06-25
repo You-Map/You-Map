@@ -41,15 +41,14 @@ const Place = () => {
   return (
     <div>
       <PlaceHeader />
-      <PlaceTitle>${PlaceList[placeID]}</PlaceTitle>
+      <PlaceTitle>{PlaceList[placeID]}</PlaceTitle>
       <PlaceSubtitlte>인기 많은 장소</PlaceSubtitlte>
       <GoodPlaceContainer>
-        {
-          loading ? 
-          dataList.map((placebox)=>(
-            <PlaceBox data={placebox} />
-          )) : <></>
-        }
+        {loading ? (
+          dataList.map((placebox) => <PlaceBox data={placebox} />)
+        ) : (
+          <></>
+        )}
       </GoodPlaceContainer>
     </div>
   );

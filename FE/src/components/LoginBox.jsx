@@ -46,6 +46,11 @@ const LoginButton = styled.button`
   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
   border-style: none;
   font-family: Gmarket Sans TTF;
+
+  &:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
 `;
 
 export default LoginBox;

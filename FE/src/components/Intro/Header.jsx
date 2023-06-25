@@ -66,6 +66,11 @@ const HeaderButton = styled.button`
   border-radius: 999px;
   padding: 1rem;
   width: 12rem;
+
+  &:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
 `;
 
 export default Header;

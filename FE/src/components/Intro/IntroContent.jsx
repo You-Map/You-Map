@@ -20,7 +20,7 @@ const IntroContentContainer = styled.div`
 `;
 
 const IntroContentTitle = styled.div`
-  margin: 20rem auto 0;
+  margin: 15rem auto 0;
   margin-left: 10rem;
   font-family: Gmarket Sans TTF;
   h1 {

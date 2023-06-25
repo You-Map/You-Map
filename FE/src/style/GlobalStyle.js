@@ -10,7 +10,10 @@ const GlobalStyle = createGlobalStyle`
      };
     html {
         font-size: 12px;
-    }
+    };
+    &button:hover {
+        opacith: 70%;
+    };
 `;
 
 export default GlobalStyle;

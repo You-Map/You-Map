@@ -83,6 +83,11 @@ const ContentButton = styled.button`
   font-size: 24px;
   font-family: Gmarket Sans TTF;
   font-weight: 500;
+
+  &:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
 `;
 
 const MapButton = styled.button`
