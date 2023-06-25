@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { palette } from "../style/palette";
+import { palette } from "../../style/palette";
 
-import Modal from "./Modal/Modal";
-import LoginBox from "./LoginBox";
+import Modal from "../Modal/Modal";
+import LoginBox from "../LoginBox";
 
-import useModal from "./Modal/useModal";
+import useModal from "../Modal/useModal";
 
 const Header = () => {
   const [isOpen, toggleModal] = useModal();
