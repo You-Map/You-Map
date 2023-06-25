@@ -6,12 +6,19 @@ import LoginBox from "../LoginBox";
 
 import useModal from "../Modal/useModal";
 
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Header = () => {
   const [isOpen, toggleModal] = useModal();
 
   return (
     <HeaderContainer>
-      <HeaderLogo>YouMap</HeaderLogo>
+      <HeaderLogo>
+        <FontAwesomeIcon icon={faLocationDot} />
+        YouMap
+      </HeaderLogo>
       <HeaderButton onClick={toggleModal}>가입하기</HeaderButton>
 
       <Modal state={isOpen} toggleModal={toggleModal}>
@@ -39,8 +46,12 @@ const HeaderLogo = styled.div`
   font-family: Gmarket Sans TTF;
   font-weight: 700;
 
-
   margin-left: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 `;
 
 const HeaderButton = styled.button`
