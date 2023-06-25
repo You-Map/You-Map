@@ -4,20 +4,13 @@ const IntroContent = () => {
   return (
     <IntroContentContainer>
       <IntroContentTitle>
-        <h1>YouMap</h1>
         <h2>너를 위한 지도</h2>
+        <h1>YouMap</h1>
       </IntroContentTitle>
       <IntroContentDescription>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
+        학교에서 혼자 공부할 때, 팀플할 때, 휴식하고 싶을 때 <br />
+        알맞은 장소를 유맵에서 찾아보세요.
         <br />
-        Lorem Ipsum has been the industry's standard dummy text ever since the
-        1500s,
-        <br />
-        when an unknown printer took a galley of type and scrambled it to make a
-        type specimen book. <br />
-        It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially
       </IntroContentDescription>
     </IntroContentContainer>
   );
@@ -28,9 +21,30 @@ const IntroContentContainer = styled.div`
 `;
 
 const IntroContentTitle = styled.div`
-  margin: 5rem auto;
+  margin: 20rem auto 0;
+  margin-left: 10rem;
+  font-family: Gmarket Sans TTF;
+  h1 {
+    margin: 2rem auto;
+    color: #3c6255;
+    font-size: 120px;
+    font-weight: 700;
+  }
+  h2 {
+    color: #3c6255;
+    font-size: 40px;
+    font-weight: 500;
+  }
 `;
 
-const IntroContentDescription = styled.p``;
+const IntroContentDescription = styled.p`
+  margin: 3rem auto 5rem;
+  margin-left: 10rem;
+  color: #3c6255;
+  font-size: 18px;
+  font-family: Gmarket Sans TTF;
+  font-weight: 500;
+  line-height: 21px;
+`;
 
 export default IntroContent;
