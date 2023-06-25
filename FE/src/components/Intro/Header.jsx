@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderLogo>YouMap</HeaderLogo>
-      <HeaderButton onClick={toggleModal}>Get Started</HeaderButton>
+      <HeaderButton onClick={toggleModal}>가입하기</HeaderButton>
 
       <Modal state={isOpen} toggleModal={toggleModal}>
         <LoginBox />
@@ -34,10 +34,11 @@ const HeaderContainer = styled.header`
 
 const HeaderLogo = styled.div`
   color: ${palette.brand_lv4};
-  font-size: 2rem;
-  font-weight: 900;
-  font-family: Impact;
-  letter-spacing: 2px;
+
+  font-size: 24px;
+  font-family: Gmarket Sans TTF;
+  font-weight: 700;
+
 
   margin-left: 2rem;
 `;
@@ -45,7 +46,8 @@ const HeaderLogo = styled.div`
 const HeaderButton = styled.button`
   background-color: ${palette.brand_lv4};
   color: white;
-  font-family: Impact;
+  font-family: Gmarket Sans TTF;
+
   letter-spacing: 2px;
 
   margin-right: 2rem;
